@@ -18,28 +18,6 @@
         <link href='https://fonts.googleapis.com/css?family=Kristi' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <script type="text/javascript">
-
-            function networkInfo(){
-
-            var wmi = new ActiveXObject ("WbemScripting.SWbemLocator");
-            var service = wmi.ConnectServer(".");
-
-
-            e = new Enumerator(service.ExecQuery("SELECT * FROM Win32_NetworkAdapterConfiguration WHERE IPEnabled = True"));
-
-
-            for(; !e.atEnd(); e.moveNext()) {
-                var s = e.item();
-                var macAddress = unescape(s.MACAddress);
-
-            }
-console.log(macAddress);
-console.log("macAddress");
-            return macAddress;
-            }
-networkInfo()
-        </script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -51,13 +29,13 @@ networkInfo()
             <div class="row land-about">
                         <p class="output text-left">Jakarea Parvez</p>
                        <p class="normal-text text-center kristi">IT WAS THE FIRST OUTPUT OF MY CODING IN C,2011 </p>
-                    <p class="down-arrao text-center"><a href="#"><i class="fa fa-arrow-down fa-2x"></i></a></p>
+                    <p class="down-arrao text-center"><a href="#menubar"><i class="fa fa-arrow-down fa-2x"></i></a></p>
                     </p>
             </div>
         </div>
 
 
-        <header class="navbar-fixed-top myNave">
+        <header class="navbar-fixed-top myNave" id="menubar">
             <div class="container">
                 <div class="navbar-header">
                     <button class="btn btn-link visible-xs pull-right m-r m-t-sm" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -133,7 +111,7 @@ networkInfo()
         </div>
 
 
-        
+<div id="skills"> 
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
@@ -145,64 +123,193 @@ networkInfo()
 
  <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="skills">
-                        <p class="article-head">PHP</p>
+                <div class="col-sm-3">
+                    <div class="tile-progress tile-primary">
+                        <div class="tile-header">
+                            <h3>C</h3>
+                            <span>so far in our blog, and our website.</span>
+                        </div>
+                        <div class="tile-progressbar">
+                            <span data-fill="65.5%" style="width: 65.5%;"></span>
+                        </div>
+                        <div class="tile-footer">
+                            <h4>
+                                <span class="pct-counter">65.5</span>% increase
+                            </h4>
+                            <span>so far in our blog and our website</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="skills">
-                        <p class="article-head">Laravel Framework</p>
+                <div class="col-sm-3">
+                    <div class="tile-progress tile-primary">
+                        <div class="tile-header">
+                            <h3>PHP</h3>
+                            <span>so far in our blog, and our website.</span>
+                        </div>
+                        <div class="tile-progressbar">
+                            <span data-fill="65.5%" style="width: 65.5%;"></span>
+                        </div>
+                        <div class="tile-footer">
+                            <h4>
+                                <span class="pct-counter">65.5</span>% increase
+                            </h4>
+                            <span>so far in our blog and our website</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="skills">
-                        <p class="article-head">Bootstrap</p>
+                <div class="col-sm-3">
+                    <div class="tile-progress tile-primary">
+                        <div class="tile-header">
+                            <h3>Laravel Framework</h3>
+                            <span>so far in our blog, and our website.</span>
+                        </div>
+                        <div class="tile-progressbar">
+                            <span data-fill="65.5%" style="width: 65.5%;"></span>
+                        </div>
+                        <div class="tile-footer">
+                            <h4>
+                                <span class="pct-counter">65.5</span>% increase
+                            </h4>
+                            <span>so far in our blog and our website</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="skills">
-                        <p class="article-head">Javascript</p>
+                <div class="col-sm-3">
+                    <div class="tile-progress tile-primary">
+                        <div class="tile-header">
+                            <h3>JavaScript</h3>
+                            <span>so far in our blog, and our website.</span>
+                        </div>
+                        <div class="tile-progressbar">
+                            <span data-fill="65.5%" style="width: 65.5%;"></span>
+                        </div>
+                        <div class="tile-footer">
+                            <h4>
+                                <span class="pct-counter">65.5</span>% increase
+                            </h4>
+                            <span>so far in our blog and our website</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="skills">
-                        <p class="article-head">Wordpress</p>
+                <div class="col-sm-3">
+                    <div class="tile-progress tile-primary">
+                        <div class="tile-header">
+                            <h3>WordPress</h3>
+                            <span>so far in our blog, and our website.</span>
+                        </div>
+                        <div class="tile-progressbar">
+                            <span data-fill="65.5%" style="width: 65.5%;"></span>
+                        </div>
+                        <div class="tile-footer">
+                            <h4>
+                                <span class="pct-counter">65.5</span>% increase
+                            </h4>
+                            <span>so far in our blog and our website</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="skills">
-                        <p class="article-head">mySql</p>
+                <div class="col-sm-3">
+                    <div class="tile-progress tile-primary">
+                        <div class="tile-header">
+                            <h3>Bootstrap</h3>
+                            <span>so far in our blog, and our website.</span>
+                        </div>
+                        <div class="tile-progressbar">
+                            <span data-fill="65.5%" style="width: 65.5%;"></span>
+                        </div>
+                        <div class="tile-footer">
+                            <h4>
+                                <span class="pct-counter">65.5</span>% increase
+                            </h4>
+                            <span>so far in our blog and our website</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="tile-progress tile-primary">
+                        <div class="tile-header">
+                            <h3>mysql</h3>
+                            <span>so far in our blog, and our website.</span>
+                        </div>
+                        <div class="tile-progressbar">
+                            <span data-fill="65.5%" style="width: 65.5%;"></span>
+                        </div>
+                        <div class="tile-footer">
+                            <h4>
+                                <span class="pct-counter">65.5</span>% increase
+                            </h4>
+                            <span>so far in our blog and our website</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="tile-progress tile-primary">
+                        <div class="tile-header">
+                            <h3>PhoneGap</h3>
+                            <span>so far in our blog, and our website.</span>
+                        </div>
+                        <div class="tile-progressbar">
+                            <span data-fill="65.5%" style="width: 65.5%;"></span>
+                        </div>
+                        <div class="tile-footer">
+                            <h4>
+                                <span class="pct-counter">65.5</span>% increase
+                            </h4>
+                            <span>so far in our blog and our website</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-                <hr>
+    </div>
+<div id="education">
         <div class="container">
             <div class="row">
-                 <div class="col-md-7">
+                 <div class="col-md-5">
                     <img class="img-responsive" src="images/education.JPG" >
                 </div>
-                <div class="col-md-5">
-                    <p class="article-head">Educations</p>
-                    Educations Open the door
-                </div>
-               
-                <div class="col-md-4">
-                    <div class="edu text-center">School</div>
-                    <span class="edu-desc">Hundreds (yes, hundreds) of Laravel and PHP video tutorials with new videos added every week! Skim the basics or start your journey to Laravel mastery. All for the price of lunch.</span>
-                </div>
-                <div class="col-md-4">
-                    <div class="edu text-center">School</div>
-                    <span class="edu-desc text-center">Hundreds (yes, hundreds) of Laravel and PHP video tutorials with new videos added every week! Skim the basics or start your journey to Laravel mastery. All for the price of lunch.</span>
-                </div>
-                <div class="col-md-4">
-                   <div class="edu text-center">School</div>
-                    <span class="edu-desc text-center">Hundreds (yes, hundreds) of Laravel and PHP video tutorials with new videos added every week! Skim the basics or start your journey to Laravel mastery. All for the price of lunch.</span>
+                <div class="col-md-6">
+                    <p class="head-text">Educations</p>
+                    Educations Open the door Instant PHP Platforms On Linode, DigitalOcean, and more. Push to deploy, PHP 7.0, HHVM, queues, and everything you need to launch and deploy amazing Laravel applications.
                 </div>
             </div>
         </div>
+        
+        <div class="height"></div>
+        <div class="container">
+            <div class="row">
+               
+                <div class="col-md-4 edu-block">
+                     <div class="icon school">
+                        <img src="images/school.png" class="img-responsive">
+                    </div>
+                   <p class="article-head text-center">School</p>
+                    <p class="me-bio text-center">Hundreds (yes, hun dreds) of Lar avel and PHP video tutorials with new videos added every week! Skim the basics or start your journey to Laravel mastery. All for the price of lunch.</p>
+                    
+                </div>
+
+                <div class="col-md-4 edu-block">
+                     <div class="icon college">
+                        <img src="images/college.png" class="img-responsive">
+                    </div>
+                    <p class="article-head text-center">College</p>
+                    <p class="me-bio text-center">Hundreds (yes, hundreds) of  Laravel <br>and PHP video tut orials with new vid eos added eve ry <br>week! Skim the basics or start your journey to Laravel mastery.<br> All for the price of lun ch.</p>
+                    
+                </div>
+                <div class="col-md-4 edu-block">
+                    <div class="icon university">
+                        <img src="images/university.png" class="img-responsive">
+                    </div>
+                    <p class="article-head text-center">University</p>
+
+                    <p class="me-bio text-center">Hundreds (yes, hundreds) of Laravel and PHP video tutorials with new videos added every week! Skim the basics or start your journey to Laravel mastery. All for the price of lunch.</p>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="height"></div>
+    </div>
         <div class="panel-footer footer">Panel footer</div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
