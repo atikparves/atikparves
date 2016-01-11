@@ -113,7 +113,6 @@ p.myDiscription {
 /*******************************paradise*/
 
 p.head-text {
-    text-align: center;
     font-size: 42px;
     font-weight: 700;
     font-family: Inconsolata,serif;
@@ -206,3 +205,85 @@ padding:100px;
 .box:hover{
 	color: #D41B35;
 };
+
+
+/*******************************footer*/
+
+.panel-footer.footer.footer-bootom {
+    background: #fafbfb;
+}
+
+span.big-130 {
+    font-size: 65px;
+    color: #000;
+    text-align: left;
+}
+
+/*********************************About*/
+
+.kristi{
+    font-family: 'Shadows Into Light Two', cursive;
+}
+p.normal-text.text-center.kristi {
+    color: blue;
+    background: #fff;
+    font-size: 20px;
+    margin: 0px;
+}
+p.output.text-left {
+    font-size: 120px;
+    display: block;
+    background: #000;
+    color: #fff;
+    padding-bottom: 430px;
+    font-family:Inconsolata,serif;
+}
+
+.skills {
+    border: 1px solid #555;
+    margin: 35px 25px;
+    text-align: center;
+    height: 400px;
+}
+
+p.me-bio {
+    font-size: 18px;
+    color: #757575;
+    font-family: monospace;
+}
+
+.manager {
+    margin-top: 10px;
+}
+
+.social {
+    float: left;
+    margin:10px 2px;
+    padding: 10px;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.04);
+}
+.social a{
+    color:rgba(0, 0, 0, 0.5);
+}
+
+.social.fb a:hover {
+    color: #3B5998;
+}
+.social.twitter a:hover {
+    color: #00aced;
+}
+.social.linkedin a:hover {
+    color: #007bb6;
+}
+.social.github a:hover {
+    color: #bbb;
+}
+.social.youtube a:hover {
+    color:#bb0000;
+}
+.social.stackoverflow a:hover {
+    color:#F48024 ;
+}.social.google-plus a:hover {
+    color: #dd4b39;
+}
